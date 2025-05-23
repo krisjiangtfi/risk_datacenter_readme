@@ -1,28 +1,26 @@
-# Risk Data Center Documentation
+# 数据集市使用手册
 
-数据集市手册
 
-## What is Risk Data Center?
+## 什么是风险数据集市?
 
-The Risk Data Center is a system designed to manage and analyze risk-related data, including Bloomberg data and other financial risk metrics.
+风险数据集市是一个设计用于管理和分析风险相关数据的系统，包括彭博社数据和其他金融风险指标。
 
-## Documentation Structure
+## 文档结构
 
-This documentation is organized into the following sections:
+文档包含以下内容:
 
-- **[Database Documentation](database.md)**: Detailed information about database schemas, tables, and relationships
-- **[API Reference](#)**: Information about APIs for interacting with the Risk Data Center
-- **[User Guide](#)**: Instructions for using the Risk Data Center
-- **[Developer Guide](#)**: Guidelines for developers working on the Risk Data Center
+- **[数据库文档](database.md)**: 关于数据库架构、表和关系的详细信息
+- **[用户指南](handbook)**: 使用风险数据集市的说明
+- **[任务计划](schedule)**: 为在风险数据集市工作的开发人员提供的指南
 
-## Getting Started
+## 开始使用
 
-To get started with the Risk Data Center:
+开始使用风险数据集市:
 
-1. Review the [database structure](database.md) to understand the available data
-2. Learn how to query the database using our example queries
-3. Explore the API documentation to understand how to interact with the system programmatically
+1. 查看[数据库结构](database.md)以了解可用数据
+2. 学习如何使用我们的示例查询来查询数据库
+3. 探索任务计划文档以了解数据处理流程
 
-## Contact
+## 联系方式
 
-For questions or support, please contact [your contact information or support channel].
+如有问题或需要支持，请联系[风险管理部]。
