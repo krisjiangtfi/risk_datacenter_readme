@@ -16,13 +16,15 @@
         <link rel="prev" href="..">
       
       
+        <link rel="next" href="../mongodb/">
+      
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
-        <title>Overview - Risk Data Center Documentation</title>
+        <title>PostgreSQL - Risk Data Center Documentation</title>
       
     
     
@@ -84,7 +86,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#database-documentation" class="md-skip">
+        <a href="#postgresql" class="md-skip">
           Skip to content
         </a>
       
@@ -118,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Overview
+              PostgreSQL
             
           </span>
         </div>
@@ -254,6 +256,44 @@
   
 
       
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../handbook/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Handbook
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../schedule/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Schedule
+
+      </a>
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -378,7 +418,7 @@
   
   
   <span class="md-ellipsis">
-    Overview
+    PostgreSQL
     
   </span>
   
@@ -391,7 +431,7 @@
   
   
   <span class="md-ellipsis">
-    Overview
+    PostgreSQL
     
   </span>
   
@@ -414,9 +454,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      风险数据集市文档
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      数据库连接
     </span>
   </a>
   
@@ -443,18 +492,45 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#table-table-name-11" class="md-nav__link">
+  <a href="#table-f3221th1" class="md-nav__link">
     <span class="md-ellipsis">
-      Table: [Table Name 1.1]
+      Table: [f3221th1]
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#table-table-name-12" class="md-nav__link">
+  <a href="#table-bbgtickettype" class="md-nav__link">
     <span class="md-ellipsis">
-      Table: [Table Name 1.2]
+      Table: [bbgtickettype]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-product_subflag" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table: [product_subflag]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-f3221af1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table: [f3221af1]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-fxrate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table: [fxrate]
     </span>
   </a>
   
@@ -466,19 +542,121 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#schema-schema-name-2" class="md-nav__link">
+  <a href="#schema-reports" class="md-nav__link">
     <span class="md-ellipsis">
-      Schema: [Schema Name 2]
+      Schema: [reports]
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Schema: [Schema Name 2]">
+    <nav class="md-nav" aria-label="Schema: [reports]">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#table-table-name-21" class="md-nav__link">
+  <a href="#table-report" class="md-nav__link">
     <span class="md-ellipsis">
-      Table: [Table Name 2.1]
+      Table: [report]
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schema-statement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schema: [statement]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Schema: [statement]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#table-amd_balance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table: [amd_balance]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-amd_cash" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table: [amd_cash]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-amd_accounting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table: [amd_accounting]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-amd_trader" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table: [amd_trader]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-filelog" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table: [filelog]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-tfifa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table: [tfifa]
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schema-basic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schema: [basic]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Schema: [basic]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#table-book_remap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table: [book_remap]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-trader" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table: [trader]
     </span>
   </a>
   
@@ -491,33 +669,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#important-queries" class="md-nav__link">
-    <span class="md-ellipsis">
-      Important Queries
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#data-flow-diagrams" class="md-nav__link">
-    <span class="md-ellipsis">
-      Data Flow Diagrams
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#database-maintenance" class="md-nav__link">
-    <span class="md-ellipsis">
-      Database Maintenance
-    </span>
-  </a>
   
 </li>
       
@@ -539,9 +690,76 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mongodb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MongoDB
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../handbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Handbook
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../schedule/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Schedule
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -573,9 +791,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      风险数据集市文档
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      数据库连接
     </span>
   </a>
   
@@ -602,18 +829,45 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#table-table-name-11" class="md-nav__link">
+  <a href="#table-f3221th1" class="md-nav__link">
     <span class="md-ellipsis">
-      Table: [Table Name 1.1]
+      Table: [f3221th1]
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#table-table-name-12" class="md-nav__link">
+  <a href="#table-bbgtickettype" class="md-nav__link">
     <span class="md-ellipsis">
-      Table: [Table Name 1.2]
+      Table: [bbgtickettype]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-product_subflag" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table: [product_subflag]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-f3221af1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table: [f3221af1]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-fxrate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table: [fxrate]
     </span>
   </a>
   
@@ -625,19 +879,121 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#schema-schema-name-2" class="md-nav__link">
+  <a href="#schema-reports" class="md-nav__link">
     <span class="md-ellipsis">
-      Schema: [Schema Name 2]
+      Schema: [reports]
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Schema: [Schema Name 2]">
+    <nav class="md-nav" aria-label="Schema: [reports]">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#table-table-name-21" class="md-nav__link">
+  <a href="#table-report" class="md-nav__link">
     <span class="md-ellipsis">
-      Table: [Table Name 2.1]
+      Table: [report]
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schema-statement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schema: [statement]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Schema: [statement]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#table-amd_balance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table: [amd_balance]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-amd_cash" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table: [amd_cash]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-amd_accounting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table: [amd_accounting]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-amd_trader" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table: [amd_trader]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-filelog" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table: [filelog]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-tfifa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table: [tfifa]
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schema-basic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schema: [basic]
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Schema: [basic]">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#table-book_remap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table: [book_remap]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-trader" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table: [trader]
     </span>
   </a>
   
@@ -650,33 +1006,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#important-queries" class="md-nav__link">
-    <span class="md-ellipsis">
-      Important Queries
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#data-flow-diagrams" class="md-nav__link">
-    <span class="md-ellipsis">
-      Data Flow Diagrams
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#database-maintenance" class="md-nav__link">
-    <span class="md-ellipsis">
-      Database Maintenance
-    </span>
-  </a>
   
 </li>
       
@@ -705,44 +1034,52 @@
 
 
 
-<h1 id="database-documentation">Database Documentation</h1>
-<h2 id="overview">Overview</h2>
-<p><em>Provide a brief introduction about risk_datacenter, its purpose, and general architecture.</em></p>
+<h1 id="postgresql">PostgreSQL 数据库文档</h1>
+<h2 id="_1">风险数据集市文档</h2>
+<p><em>简要说明数据集市使用方法，数据源以及数据处理方法</em></p>
+<h2 id="_2">数据库连接</h2>
+<p>连接方法：host=10.202.5.218 port=5432 dbname=risk_datacenter user=postgres password=risk</p>
 <h2 id="database-schemas">Database Schemas</h2>
 <h3 id="schema-public">Schema: [public]</h3>
-<p><em>mainly include the bbg data, such as records in th</em></p>
-<h4 id="table-table-name-11">Table: [Table Name 1.1]</h4>
-<p><strong>Description</strong>: <em>Explain what this table stores and its role in the system.</em></p>
-<p><strong>Primary Key</strong>: <em>Identify the primary key field(s)</em></p>
-<p><strong>Fields</strong>:
-| Field Name | Data Type   | Description                               | Constraints            |
-| ---------- | ----------- | ----------------------------------------- | ---------------------- |
-| field_1    | [data type] | Description of what this field represents | NOT NULL, UNIQUE, etc. |
-| field_2    | [data type] | Description of what this field represents | Foreign key to table X |
-| field_3    | [data type] | Description of what this field represents | Default value: X       |</p>
-<p><strong>Indexes</strong>:
-- <em>List any important indexes on this table</em></p>
-<p><strong>Relationships</strong>:
-- <em>Describe relationships with other tables (e.g., "Has many [Table X]", "Belongs to [Table Y]")</em></p>
-<p><strong>Notes</strong>:
-- <em>Any important notes about this table, such as performance considerations or business rules</em></p>
-<h4 id="table-table-name-12">Table: [Table Name 1.2]</h4>
-<p><em>Repeat the same structure as above</em></p>
-<h3 id="schema-schema-name-2">Schema: [Schema Name 2]</h3>
-<p><em>Describe the purpose of this schema</em></p>
-<h4 id="table-table-name-21">Table: [Table Name 2.1]</h4>
-<p><em>Repeat the same structure as above</em></p>
-<h2 id="important-queries">Important Queries</h2>
-<p><em>Document important or frequently used queries</em></p>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">example_field</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">FROM</span><span class="w"> </span><span class="n">example_table</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">condition</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;value&#39;</span>
-</code></pre></div>
-<em>Explain what this query does and when it should be used</em></p>
-<h2 id="data-flow-diagrams">Data Flow Diagrams</h2>
-<p><em>Optional: Include diagrams showing how data flows between tables</em></p>
-<h2 id="database-maintenance">Database Maintenance</h2>
-<p><em>Document any maintenance procedures, backup schedules, or other operational considerations</em></p>
+<p><em>主要包括了彭博交易记录，汇率，价格信息等</em></p>
+<h4 id="table-f3221th1">Table: [f3221th1]</h4>
+<p><strong>简介</strong>: <em>彭博交易记录，每个工作日更新,数据来自TSIP生成的交易数据</em></p>
+<p><strong>Primary Key</strong>: <em>ticket_nubmer</em></p>
+<p>注: <em>由于交易有修正的可能，当同一个ticket_number的相关交易信息有修改时，在导入数据库时会自动覆盖之前的历史记录，确保这个表里只有一条有效的ticket_number，覆盖的记录可以在表thupdate_log中查看，修改的交易类型在ticket_type_change_log中查看</em></p>
+<h4 id="table-bbgtickettype">Table: [bbgtickettype]</h4>
+<p><strong>简介</strong>: <em>彭博交易类型表，包含了大部分的交易类型和对应的含义</em></p>
+<p><strong>关系</strong>: <em>code和f3221th1的tblt_ticket_type相关</em></p>
+<h4 id="table-product_subflag">Table: [product_subflag]</h4>
+<p><strong>简介</strong>: <em>彭博产品子类型表，包含了大部分的产品类型及其细分类型和对应的含义</em></p>
+<p><strong>关系</strong>: <em>code和f3221th1的tblt_product_subflag相关</em></p>
+<h4 id="table-f3221af1">Table: [f3221af1]</h4>
+<p><strong>简介</strong>: <em>彭博每日持仓数据。数据来自TSIP生成的持仓数据</em></p>
+<h4 id="table-fxrate">Table: [fxrate]</h4>
+<p><strong>简介</strong>: <em>汇率数据</em></p>
+<h3 id="schema-reports">Schema: [reports]</h3>
+<p><em>包括报表，结单等文件提取出的数据</em></p>
+<h4 id="table-report">Table: [report]</h4>
+<p><strong>简介</strong>: <em>根据基金的托管文件提取出的资产，负债和权益数据。该数据是从MongoDB的risk_datacenter数据库里抓取文件进行解析后得到的数据</em></p>
+<h3 id="schema-statement">Schema: [statement]</h3>
+<p><em>资产管理基金的持仓、现金等表，数据来自：\10.202.7.240\am-ops-rm</em></p>
+<h4 id="table-amd_balance">Table: [amd_balance]</h4>
+<p><strong>简介</strong>: <em>资产管理基金的持仓</em></p>
+<h4 id="table-amd_cash">Table: [amd_cash]</h4>
+<p><strong>简介</strong>: <em>资产管理基金的现金</em></p>
+<h4 id="table-amd_accounting">Table: [amd_accounting]</h4>
+<p><strong>简介</strong>: <em>资产管理基金的会计数据</em></p>
+<h4 id="table-amd_trader">Table: [amd_trader]</h4>
+<p><strong>简介</strong>: <em>资产管理基金的交易数据</em></p>
+<h4 id="table-filelog">Table: [filelog]</h4>
+<p><strong>简介</strong>: <em>资产管理基金的文件记录</em></p>
+<h4 id="table-tfifa">Table: [tfifa]</h4>
+<p><strong>简介</strong>: <em>天风国际的财务报表。报表按资产、负债和权益分为三个资产类型，每个类型有各自的会计科目及对应的值</em></p>
+<h3 id="schema-basic">Schema: [basic]</h3>
+<p><em>基础数据表，主要包括了产品类型，交易员信息等</em></p>
+<h4 id="table-book_remap">Table: [book_remap]</h4>
+<p><strong>简介</strong>: <em>彭博交易账户映射表，包含了交易账户变更信息</em></p>
+<h4 id="table-trader">Table: [trader]</h4>
+<p><strong>简介</strong>: <em>交易员信息表，包含了交易员的姓名，部门，头衔等信息</em></p>
 <h2 id="change-log">Change Log</h2>
 <table>
 <thead>
@@ -750,15 +1087,13 @@
 <th>Date</th>
 <th>Change</th>
 <th>Reason</th>
-<th>Author</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>YYYY-MM-DD</td>
-<td>Description of change</td>
-<td>Reason for change</td>
-<td>Name</td>
+<td>2025-05-23</td>
+<td>建立文档</td>
+<td>介绍数据库主要功能</td>
 </tr>
 </tbody>
 </table>
